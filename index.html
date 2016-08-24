@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app = "jessApp">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="mystyles.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type= "text/javascript" src="/app.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Baloo|Shrikhand|Raleway" rel="stylesheet"> </head>
+
+<body>
+    
+      
+    <div class ="container">
+        <div class ="row">
+        <div class="top">
+        
+          <div class="col-med-6 pull-right" id=Web>
+            <h2 id="jessb">jess blokland</h2>
+            <p id ="fullstackweb">Full Stack Web Developer</p>
+          </div> <!--End Col md 6-->
+          <div class ="col-med-6">
+            <ul>
+            <li><a href = "/#/">Home</a></li>
+            <li><a href = "/#/aboutme">About Me</a></li>
+            <li><a href = "/#/mywork">My Work</a></li>
+            <li><a href = "/#/reads">Tech Reads</a></li>
+            <li><a href = "#/hireme">Hire me!</a></li>
+            </ul>
+          </div> <!--End menu items column--> 
+          </div><!--End row-->
+        </div> <!--End top div-->
+         </div><!--End container-->  
+        
+    
+    
+        <div ng-view>
+            
+            
+       
+        
+
+  
+    
+</div> <!-- End Main Div-->
+
+<div id = "footer">
+    
+    This website is a Single Page App running on Angular JS and Bootstrap.   Featuring the fabulous Google Webfont "Baloo".
+    <br>
+    
+</div>
+    
+</body>
+
+</html>
