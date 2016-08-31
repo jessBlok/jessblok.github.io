@@ -2,6 +2,11 @@
     padding-bottom: 5px;
 }
 
+/* This is a general class for centering text*/
+
+.centertext {
+    text-align: center;
+    }
 
 
 
