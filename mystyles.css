@@ -225,3 +225,24 @@ textarea {
 .myworkfeatures li {
     list-style-type: disc;
 }
+
+
+
+
+
+
+/*3D animations*/
+.flip-container {
+    perspective: 1000px;
+}
+
+.flipper {
+    transform: rotateY(360deg);
+    transition: 1.9s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+
+

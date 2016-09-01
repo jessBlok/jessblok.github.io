@@ -10,7 +10,8 @@
             <div class = "col-xs-6 text-right">
                 <li><span id ="front">front</span></li><ul>
             </div>
-            <div class = "col-xs-6 listy text-left" >
+            <div class = "col-xs-6 listy text-left flip-container"  >
+              <div ng-class ="{'flipper': hoverleft}" ng-mouseover = "hoverleft = true" ng-mouseout = "hoverleft = false" >
               <ul>
                  <li>html5</li>
                  <li>css3</li>
@@ -22,6 +23,7 @@
                  <li>localization</li>
                  <li>wordpress</li>
               </ul>
+              </div><!--End flipper-->
             </div> <!--End col-md-9-->  
           </div>  <!--End first column in first row-->
           <div class = "col-md-4">
@@ -29,6 +31,7 @@
               <li><span id= "back">back</span></li>
             </div>  <!--End col-md-3-->   
             <div class="col-xs-6 listy">
+                <div ng-class ="{'flipper': hovermiddle}" ng-mouseover = "hovermiddle = true" ng-mouseout = "hovermiddle = false" >
                 <ul>
                    <li>node js</li>
                    <li>express</li>
@@ -36,6 +39,7 @@
                    <li>Rest APIS</li>
                    <li>php</li>
                 </ul>
+                </div><!--End flipper-->
               </div><!--End col-md-9-->  
             
           </div> <!--End second column in first row -->
@@ -44,12 +48,14 @@
                 <li><span id="data">tools</span></li>
            </div> <!--End col-xs-s-->
            <div class ="col-xs-6 listy">
+            <div ng-class ="{'flipper': hoverright}" ng-mouseover = "hoverright = true" ng-mouseout = "hoverright = false" >
             <ul>
                 <li>git</li>
                 <li>gulp/grunt</li>
                 <li>heroku</li>
                 
            </ul>
+           </div><!--End flipper-->
         </div> <!--End col-xs-9-->
       </div> <!--End third column first row-->
     </div>   <!--End first row -->  
@@ -57,4 +63,6 @@
         
       </div>    
     </div> <!--End Row-->  
+    
+   
   </div>    <!--End Container-->

@@ -33,8 +33,11 @@ $routeProvider
                 templateUrl : 'pages/reads.html',
                 controller  : 'aboutController'
             })
-
-  
+            
+            .when('/alphabetshuffle', {
+                templateUrl : 'pages/alphabetshuffle.html',
+                controller  : 'shuffleController'
+            });
     });
 
 
@@ -42,7 +45,8 @@ $routeProvider
 jessApp.controller('mainController', function($scope) {
 
         // create a message to display in our view
-        $scope.message = 'Hi';
+        $scope.themessage = 'click on jquery!';
+        $scope.hellomessage = "this is angular.  no jquery!";
     });
 
 
@@ -60,3 +64,14 @@ jessApp.controller('jessController', function($scope) {
     jessApp.controller('hiremeController', function($scope) {
         $scope.message = 'Hi';
     });
+    
+    
+    jessApp.controller ('shuffleController', function ($scope) {
+        
+        $scope.arr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+        $scope.shuffleMe = function () {
+            shuffle();
+                }
+        
+        
+    })
