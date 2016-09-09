@@ -21,7 +21,7 @@ $routeProvider
             // route for the hireme page
             .when('/hireme', {
                 templateUrl : 'pages/hireme.html',
-                controller  : 'contactController'
+                controller  : 'hireMeController'
             })
             
             .when('/mywork', {
@@ -61,8 +61,8 @@ jessApp.controller('jessController', function($scope) {
         $scope.message = 'Hi';
     });
 
-    jessApp.controller('hiremeController', function($scope) {
-        $scope.message = 'Hi';
+    jessApp.controller('hireMeController', function($scope) {
+        $scope.firstname = ""; //THis is just a test to get controller set up
     });
     
     
